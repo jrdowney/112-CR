@@ -1,0 +1,17 @@
+
+{% extends "layout.html" %}
+
+
+{% block content %}
+    <h2>Our Amazing Catalog (client side rendered)</h2>
+
+    <div id="catalog" class="container-fluid"></div>
+{% endblock %}
+
+{% block styles %}
+    <link href="/static/css/catalog.css" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+    <script src="/static/js/catalog2.js"></script>
+{% endblock %}

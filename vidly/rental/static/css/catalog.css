@@ -1,0 +1,39 @@
+
+body {
+    background-color: rgba(182, 17, 17, 0.9);
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: inline-block !important;
+    vertical-align: top;
+    margin-right: .1rem;
+    margin-left: 4rem;
+    margin-bottom: 15px;
+}
+
+
+.card-body.style {
+    height: 100px;
+    background-color: lightgrey !important;
+}
+
+.card-img {
+    width: 285px;
+    height: 380px;
+}
+
+.card-footer {
+    background: transparent;
+    border-top: 0px;
+    background-color: lightgray !important;
+}

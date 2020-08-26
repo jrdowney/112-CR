@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/static/css/details.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="card">
+    <div class="card-horizontal">
+        <div class="img-square-wrapper">
+            <img src="{{ movie.image_url }}" class="" alt="Movie image">
+        </div>
+        <div class="card-body" style="background-color: lightgrey;>
+            <h4 class="card-title">{{ movie.title }}: ({{ movie.release_year }})</h4>
+            <h6>({{ movie.genre }})</h6>
+            <h6>Director: {{ movie.director }}</h6>
+            <p class="cart-text">{{ movie.description }}</p>
+            <h6>${{ movie.price }}</h6>
+
+        </div>
+    </div>    
+    <div class="card-footer text-muted mx-auto">
+        <a href="/catalog" class="btn btn-primary">Return to Catalog</a>
+    </div>
+  </div>
+
+{% endblock %}
